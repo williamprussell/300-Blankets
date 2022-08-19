@@ -217,18 +217,20 @@ header > div > .logo {
     position: relative;
     top: 0px;
     left: 0px;
+    z-index: 1;
+    margin-top: 10rem;
 }
 
 .banner-image {
     background-image: url("../images/banner-mock.png");
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 900px;
+    min-height: 800px;
     width: auto;
-    /* position: absolute;
-    top: -100px;
-    left: 80px;
-    z-index: auto; */
+    position: relative;
+    top: 0px;
+    left: 200px;
+    z-index: 2;
 }
 
 .banner-info {
@@ -244,3 +246,108 @@ header > div > .logo {
     width: auto;
     height: 200px;
 }
+
+
+
+/* Footer START */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid #59473F 3px;
+}
+
+.social-links {
+    padding-top: 0.5rem;
+}
+
+.facebook {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.facebook:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.instagram {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.instagram:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.twitter {
+    filter: invert(83%) sepia(35%) saturate(335%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+
+.twitter:hover {
+    filter: invert(36%) sepia(68%) saturate(1010%) hue-rotate(331deg) brightness(92%) contrast(89%);
+}
+
+.footer-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.our-story-footer:hover {
+    color: #CC4837;
+}
+
+.initiatives-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives-footer:hover {
+    color: #CC4837;
+}
+
+.get-involved-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved-footer:hover {
+    color: #CC4837;
+}
+
+.news-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news-footer:hover {
+    color: #CC4837;
+}
+
+.contact-us-footer {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-footer:hover {
+    color: #CC4837;
+}
+
+.donate-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.donate-footer:hover {
+    color: #CC4837;
+}
+
+/* Footer END */
