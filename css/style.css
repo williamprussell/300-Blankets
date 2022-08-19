@@ -158,13 +158,13 @@ header > div > .logo {
     align-items: center;
     text-align: center;
     font-family: Inter, Arial, sans-serif;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 #grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .grid-image-1 {
@@ -222,15 +222,17 @@ header > div > .logo {
 }
 
 .banner-image {
+    grid-column: 2 / 6;
     background-image: url("../images/banner-mock.png");
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 800px;
     width: auto;
-    position: relative;
-    top: 0px;
+    /* position: relative;
+    top: 100px;
     left: 200px;
-    z-index: 2;
+    bottom: 100px;
+    z-index: 2; */
 }
 
 .banner-info {
@@ -246,7 +248,6 @@ header > div > .logo {
     width: auto;
     height: 200px;
 }
-
 
 
 /* Footer START */
