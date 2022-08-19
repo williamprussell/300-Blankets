@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+
+html {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1 {
+    font-family: Inter, Arial, sans-serif;
+    color: #CC4837;
+}
+
+p {
+    font-family: Sintony, Helvetica, sans-serif;
+}
+
+/* Nav START */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #59473F 3px;
+}
+
+header > div > .logo {
+    width: 15%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.nav-links {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.our-story {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.our-story:hover {
+    color: #CC4837;
+}
+
+.initiatives {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.initiatives:hover {
+    color: #CC4837;
+}
+
+.get-involved {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-involved:hover {
+    color: #CC4837;
+}
+
+.news {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.news:hover {
+    color: #CC4837;
+}
+
+.contact-us {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us:hover {
+    color: #CC4837;
+}
+
+.donate {
+    text-decoration: none;
+    color: black;
+}
+
+.donate:hover {
+    color: #CC4837;
+}
+
+/* Hero START */
+
+.hero-image {
+    background-image: url("../images/unsplash-3.jpg");
+    background-size: cover;
+    min-height: 825px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 550px;
+    left: 150px;
+}
+
+.text-bg {
+    background: rgba(0, 0, 0, .6);
+    max-width: 450px;
+    border-radius: 10px;
+    transform: translateY(2);
+}
+
+.hero-text {
+    color: #CC4837;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.main-button {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    border-color: #E4C49F;
+    background-color: #E4C49F;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: #CC4837;
+    color: white;
+}
+
+/* Grids START */
+
+.tag-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    padding: 2rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-image-1 {
+    grid-column: 1 / 6;
+    background-image: url("../images/outreach.jpg");
+    background-size: cover;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.info {
+    grid-column: 7 / 13;
+    padding-left: 1rem;
+}
