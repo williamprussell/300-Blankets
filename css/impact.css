@@ -103,151 +103,115 @@ header > div > .logo {
 
 /* Hero START */
 
-.hero-image {
-    background-image: url("../images/unsplash-3.jpg");
-    background-size: cover;
-    min-height: 825px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.hero-content {
-    position: absolute;
-    top: 550px;
-    left: 150px;
-}
-
-.text-bg {
-    background: rgba(0, 0, 0, .6);
-    max-width: 450px;
-    border-radius: 10px;
-    transform: translateY(2);
-}
-
-.hero-text {
-    color: #CC4837;
-    font-family: Inter, Arial, sans-serif;
-    font-size: 30px;
-    padding: 1rem;
-}
-
-.main-button {
-    font-family: Inter, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 1rem;
-    border-radius: 10px;
-    border-color: #E4C49F;
-    background-color: #E4C49F;
-    cursor: pointer;
-}
-
-.main-button:hover {
-    background-color: #CC4837;
-    color: white;
-}
-
-/*Hero END */
-
-/* Grids START */
-
-.tag-line {
+#hero {
+    background-color: rgba(228, 196, 159, 20%);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: Inter, Arial, sans-serif;
+    margin-bottom: 4rem;
+}
+
+.hero-image {
     padding: 4rem;
 }
+
+/* Hero END */
+
+/* Grids START */
 
 #grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-bottom: 4rem;
+    margin-top: 2rem;
 }
 
-.grid-image-1 {
-    grid-column: 1 / 6;
-    background-image: url("../images/outreach.jpg");
-    background-size: cover;
-    max-height: 500px;
-    border-radius: 10px;
+.info-left {
+    grid-column: 2 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.info-1 {
-    grid-column: 7 / 13;
-    padding-left: 1rem;
+.grid-image-right {
+    grid-column: 8 / 12;
+    background-image: url("../images/banner-mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
 }
 
-.grid-image-2 {
-    grid-column: 8 / 13;
-    background-image: url("../images/soul-kitchen.jpg");
-    background-size: cover;
-    max-height: 500px;
-    border-radius: 10px;
+.header {
+    font-size: 50px;
 }
 
-.info-2 {
-    grid-column: 1 / 7;
-    padding-left: 1rem;
+.p-info {
+    font-size: 20px;
 }
 
-.grid-image-3 {
-    grid-column: 1 / 6;
-    background-image: url("../images/blankets.jpg");
-    background-size: cover;
-    max-height: 500px;
-    border-radius: 10px;
+.info-right {
+    grid-column: 8 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.info-3 {
-    grid-column: 7 / 13;
-    padding-left: 1rem;
+.grid-image-left {
+    grid-column: 2 / 7;
+    background-image: url("../images/calendar-mock-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.grid-image-right-2 {
+    grid-column: 8 / 12;
+    background-image: url("../images/quiz-mock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.grid-image-left-2 {
+    grid-column: 2 / 7;
+    background-image: url("../images/chat-mock-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 800px;
 }
 
 /* Grids END */
 
-/* Banner START */
+/* Lower banner START */
 
-#banner {
+.left {
+    grid-column: 1 / 7;
     background-color: rgba(228, 196, 159, 20%);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
-.banner-image {
-    grid-column: 3 / 7;
-    background-image: url("../images/banner-mock.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 600px;
-    width: auto;
-    /* position: relative;
-    top: 100px;
-    left: 200px;
-    bottom: 100px;
-    z-index: 2; */
-}
-
-.banner-info {
-    grid-column: 7 / 11;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    padding: 8rem;
 }
 
-.impact-logo {
+.logo-bottom {
     width: auto;
     height: 200px;
 }
 
+.apple-store {
+    width: auto;
+    height: 80px;
+}
+
+.person-mock {
+    grid-column: 7 / 13;
+    background-image: url("../images/splash-mock.png");
+    background-size: cover;
+    min-height: 800px;
+}
+
+/* Lower banner END */
 
 /* Footer START */
 
