@@ -21,6 +21,19 @@ p {
     font-family: Sintony, Helvetica, sans-serif;
 }
 
+@media only screen and (max-width: 1400px){
+    :root{
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    html {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
 /* Nav START */
 
 .nav-bar {
@@ -31,9 +44,10 @@ p {
 }
 
 header > div > .logo {
-    width: 15%;
+    min-width: 15%;
     height: auto;
     padding-bottom: 1rem;
+    min-height: 75px;
 }
 
 .nav-links {
@@ -101,12 +115,29 @@ header > div > .logo {
     color: #CC4837;
 }
 
+.burger {
+    width: auto;
+    height: 50px;
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+}
+
 /* Hero START */
 
 .hero-image {
     background-image: url("../images/unsplash-3.jpg");
     background-size: cover;
     min-height: 825px;
+    width: auto;
     position: relative;
     top: 0;
     left: 0;
@@ -146,6 +177,49 @@ header > div > .logo {
 .main-button:hover {
     background-color: #CC4837;
     color: white;
+}
+
+@media only screen and (max-width: 1200px){
+    .hero-image{
+        min-height: 500px;
+    }
+
+    .hero-content{
+        top: 200px;
+        left: 75px;
+    }
+
+    .text-bg{
+        max-width: 300px;
+    }
+
+    .hero-text{
+        font-size: 20px;
+    }
+
+    .main-button{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .hero-image{
+        min-height: 300px;
+    }
+
+    .hero-content{
+        top: 125px;
+        left: 50px;
+    }
+
+    .text-bg{
+        max-width: 250px;
+    }
+
+    .hero-text{
+        font-size: 15px;
+    }
 }
 
 /*Hero END */
@@ -206,6 +280,86 @@ header > div > .logo {
     padding-left: 1rem;
 }
 
+@media only screen and (max-width: 1400px){
+    .info-1{
+        font-size: small;
+    }
+
+    .info-2{
+        font-size: small;
+    }
+
+    .info-3{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .tag-line{
+        font-size: small;
+    }
+
+    .grid-image-1{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+    
+    .info-1{
+        grid-column: span 12;
+    }
+
+    .grid-image-2{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+
+    .info-2{
+        grid-column: span 12;
+        padding-bottom: 4rem;
+    }
+
+    .grid-image-3{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 750px;
+    }
+
+    .info-3{
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .tag-line{
+        padding: 1rem;
+        font-size: smaller;
+    }
+
+    .grid-image-1{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+    
+    .grid-image-2{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+
+    .grid-image-3{
+        margin: 0 auto;
+        height: 300px;
+        width: 450px;
+    }
+}
+
 /* Grids END */
 
 /* Banner START */
@@ -248,6 +402,48 @@ header > div > .logo {
     height: 200px;
 }
 
+@media only screen and (max-width: 1600px){
+    .impact-logo{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .banner-image{
+        min-height: 400px;
+    }
+
+    .banner-info{
+        font-size: small;
+    }
+
+    .impact-logo{
+        height: 125px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .banner-image{
+        grid-column: 2 / 6;
+    }
+
+    .banner-info{
+        grid-column: 8 / 12;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .banner-image{
+        grid-column: span 12;
+        margin: 0 auto;
+        height: 500px;
+        width: 375px;
+    }
+
+    .banner-info{
+        grid-column: span 12;
+    }
+}
 
 /* Footer START */
 
@@ -350,5 +546,16 @@ header > div > .logo {
 .donate-footer:hover {
     color: #CC4837;
 }
+
+@media only screen and (max-width: 1400px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-links{
+        padding: 2rem;
+    }
+}
+
 
 /* Footer END */
