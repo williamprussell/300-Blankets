@@ -31,9 +31,23 @@ p {
 }
 
 header > div > .logo {
-    width: 15%;
+    min-width: 15%;
     height: auto;
     padding-bottom: 1rem;
+    min-height: 75px;
+}
+
+@media only screen and (max-width: 1400px){
+    /* :root{
+        line-height: 2rem;
+    } */
+}
+
+@media only screen and (max-width: 1200px){
+    html {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
 .nav-links {
@@ -101,6 +115,22 @@ header > div > .logo {
     color: #CC4837;
 }
 
+.burger {
+    width: auto;
+    height: 50px;
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+}
+
 /* Hero START */
 
 #hero {
@@ -113,6 +143,33 @@ header > div > .logo {
 
 .hero-image {
     padding: 4rem;
+    margin: 0 auto;
+    height: 600px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1600px){
+    .hero-image{
+        margin: 0 auto;
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .hero-image{
+        margin: 0 auto;
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .hero-image{
+        margin: 0 auto;
+        height: 250px;
+        width: auto;
+    }
 }
 
 /* Hero END */
@@ -180,6 +237,63 @@ header > div > .logo {
     min-height: 800px;
 }
 
+@media only screen and (max-width:1400px){
+    .grid-image-right{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-right-2{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-left{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+
+    .grid-image-left-2{
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #grid{
+        padding-bottom: 2rem;
+        margin-top: 0rem;
+    }
+
+    .grid-image-right{
+        grid-column: span 12;
+    }
+
+    .grid-image-right-2{
+        grid-column: span 12;
+    }
+
+    .grid-image-left{
+        grid-column: span 12;
+    }
+
+    .grid-image-left-2{
+        grid-column: span 12;
+    }
+
+    .info-left{
+        grid-column: span 12;
+    }
+
+    .info-right{
+        grid-column: span 12;
+    }
+}
+
 /* Grids END */
 
 /* Lower banner START */
@@ -209,6 +323,32 @@ header > div > .logo {
     background-image: url("../images/splash-mock.png");
     background-size: cover;
     min-height: 800px;
+}
+
+@media only screen and (max-width:1550px){
+    .logo-bottom{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .left{
+        grid-column: span 12;
+    }
+
+    .person-mock{
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .logo-bottom{
+        height: 100px;
+    }
+
+    .apple-store{
+        height: 60px;
+    }
 }
 
 /* Lower banner END */
@@ -313,6 +453,16 @@ header > div > .logo {
 
 .donate-footer:hover {
     color: #CC4837;
+}
+
+@media only screen and (max-width: 1400px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-links{
+        padding: 2rem;
+    }
 }
 
 /* Footer END */
